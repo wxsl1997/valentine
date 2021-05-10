@@ -1,4 +1,4 @@
-package com.wxsl.valentine.alibabaprovider.controller;
+package com.wxsl.valentine.netflixprovider.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
