@@ -11,6 +11,10 @@
 
     <artifactId>alibaba-provider</artifactId>
 
+    <properties>
+        <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
+    </properties>
+
     <dependencies>
 
         <dependency>
@@ -20,8 +24,14 @@
 
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <version>${spring-cloud-alibaba.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>2.2.1.RELEASE</version>
+            <version>${spring-cloud-alibaba.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework.cloud</groupId>

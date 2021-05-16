@@ -32,7 +32,7 @@ public class LoadBalancerController {
         return feignController.info();
     }
 
-    @FeignClient(name = PROVIDER_SERVICE_NAME, contextId = "mvcFeign")
+    @FeignClient(name = PROVIDER_SERVICE_NAME, contextId = "mvcFeignController")
     interface MvcFeignController {
 
         @GetMapping("/load/info")
