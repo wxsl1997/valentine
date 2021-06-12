@@ -19,7 +19,7 @@ public class LoadBalancerController {
 
     RestTemplate restTemplate;
 
-    MvcFeignController feignController;
+    LoadFeignController loadFeignController;
 
     @GetMapping("/load-balance")
     public String loadBalance() {
@@ -29,11 +29,11 @@ public class LoadBalancerController {
 
     @GetMapping("/feign")
     public String mvcFeign() {
-        return feignController.info();
+        return loadFeignController.info();
     }
 
-    @FeignClient(name = PROVIDER_SERVICE_NAME, contextId = "mvcFeignController")
-    interface MvcFeignController {
+    @FeignClient(name = PROVIDER_SERVICE_NAME, contextId = "loadFeignController")
+    interface LoadFeignController {
 
         @GetMapping("/load/info")
         String info();

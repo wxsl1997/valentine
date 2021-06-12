@@ -10,6 +10,18 @@
 > http://localhost:9001/load/load-balance  
 > http://localhost:9001/load/feign
 
+### configuration management
+
+> http://localhost:9001/scm/refresh-scope  
+> http://localhost:9001/scm/scm-properties
+
+### breaker
+
+> http://localhost:9001/breaker/exp  
+> http://localhost:9001/breaker/rt  
+> http://localhost:9001/breaker/rest  
+> http://localhost:9001/breaker/flow
+
 # netflix
 
 ### discovery and register
@@ -20,5 +32,5 @@
 ### load balancer
 
 > http://localhost:9002/load/load-balance  
-> http://localhost:9002/load/stats
+> http://localhost:9002/load/stats  
 
