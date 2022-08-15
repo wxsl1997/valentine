@@ -21,6 +21,8 @@
         <module>netflix-server</module>
         <module>netflix-provider</module>
         <module>netflix-consumer</module>
+        <module>dubbo-provider</module>
+        <module>dubbo-consumer</module>
     </modules>
 
     <properties>
@@ -28,6 +30,8 @@
         <guava.version>29.0-jre</guava.version>
         <javax-inject.veriosn>1</javax-inject.veriosn>
         <lombok.version>1.18.12</lombok.version>
+        <dubbo.version>3.0.8</dubbo.version>
+        <curator.version>4.2.0</curator.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -53,6 +57,18 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-x-discovery</artifactId>
+                <version>${curator.version}</version>
             </dependency>
 
         </dependencies>
