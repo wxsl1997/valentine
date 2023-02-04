@@ -86,7 +86,7 @@ public class BreakController {
                 .collect(Collectors.toList());
     }
 
-    @FeignClient(name = PROVIDER_SERVICE_NAME, contextId = "breakerFeignController")
+    @FeignClient(name = PROVIDER_SERVICE_NAME)
     interface BreakerFeignController {
 
         @GetMapping("/breaker/exp")

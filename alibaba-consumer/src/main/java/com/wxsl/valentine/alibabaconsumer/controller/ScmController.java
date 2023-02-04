@@ -31,7 +31,7 @@ public class ScmController {
         return feignScmController.refreshScope();
     }
 
-    @FeignClient(name = PROVIDER_SERVICE_NAME, contextId = "feignScmController")
+    @FeignClient(name = PROVIDER_SERVICE_NAME)
     interface FeignScmController {
 
         @GetMapping("/scm/refresh-scope")
